@@ -1,23 +1,71 @@
+# Laravel Lumen
+
+# Ignore vendor directory
 /vendor/
-node_modules/
-npm-debug.log
-yarn-error.log
 
-# Laravel 4 specific
-bootstrap/compiled.php
-app/storage/
+# Ignore generated application key file
+/.env
 
-# Laravel 5 & Lumen specific
-public/storage
-public/hot
+# Ignore IDE-specific files
+.idea/
+*.iml
+*.ipr
+*.iws
 
-# Laravel 5 & Lumen specific with changed public path
-public_html/storage
-public_html/hot
-
-storage/*.key
-.env
-Homestead.yaml
+# Ignore server-specific files
 Homestead.json
-/.vagrant
-.phpunit.result.cache
+Homestead.yaml
+/.vagrant/
+/.env.d/
+.env.*
+.env.local
+.env.development
+.env.staging
+.env.production
+
+# Ignore testing and code coverage directories
+/tests/
+/phpunit.xml
+/phpunit.xml.dist
+/phpunit.result.cache
+/logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignore application logs
+/storage/logs/*.log
+
+# Ignore user-specific environment files
+/.env
+/.env.*
+!.env.example
+
+# Ignore compiled application assets
+/public/css/
+/public/js/
+
+# Ignore cached views and framework files
+/bootstrap/cache/
+/storage/framework/
+
+# Ignore uploaded files and generated images
+/public/storage/
+/public/uploads/
+/public/images/
+
+# Ignore local development environment
+.env.local
+
+# Ignore composer.lock file
+composer.lock
+
+# Ignore build output
+/build/
+/dist/
+/node_modules/
+
+# Ignore operating system and editor files
+.DS_Store
+Thumbs.db
+*.swp
