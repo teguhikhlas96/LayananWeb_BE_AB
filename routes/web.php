@@ -1,4 +1,5 @@
 <?php
+use App\Models\User;
 
 /** @var \Laravel\Lumen\Routing\Router $router */
 
@@ -14,5 +15,8 @@
 */
 
 $router->get('/', function () use ($router) {
-    return $router->app->version();
+    $users = User::all();
+
+    // You can return the data or perform any other operations
+    return response()->json($users);
 });
