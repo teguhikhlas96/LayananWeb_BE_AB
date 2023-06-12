@@ -20,3 +20,10 @@ $router->get('/', function () use ($router) {
     // You can return the data or perform any other operations
     return response()->json($users);
 });
+
+/** @var \Laravel\Lumen\Routing\Router $router */
+
+$router->post('/register', 'AuthController@register');
+$router->post('/login', 'AuthController@login');
+$router->get('/user', ['middleware' => 'auth', 'uses' => 'AuthController@user']);
+
